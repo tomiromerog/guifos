@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="tomas romero">
+    <meta name="descripcion" content="Bienvenido a gifos donde los GIF estan">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+    <title>Guifos.com</title>
+    <link rel="stylesheet" id="styleSheet" type="text/css" href="assets/styles/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- TOP HEADER     -->
+    <div class="top-header">
+        <p class="text-top-header">¡Bienvenidos/as a Guifos.com! ------- Donde los gifs estan.////// Número de visitas: 12.765.803 </p>
+    </div>
+<!-- Fin TOP HEADER     -->
+
+<!-- SECCION MENU -->
+    <section class="menu-section">
+        <div class="menu-section-image"></div>
+        <div></div>
+        <div class="menu-btms">
+            <button onclick="createGifBtn()" class="create-gif">Crear Guifos</button>
+            <button onclick="dropDownBtn()" class="choose-theme">Elegir tema</button>
+            <div onclick="dropDownBtn()" class="arrow-theme">
+                <div class="arrow-theme-img"></div>
+                <div class="menu-drop-down" id="menu-drop-down">
+                    <div></div>
+                    <div onclick="sailorDayBtn()" class="sailor-style"><span>S</span>ailor Day</div>
+                    <div></div>
+                    <div onclick="sailorNightBtn()" class="sailor-style"><span>S</span>ailor Night</div>
+                </div>  
+            </div>
+            <div class="my-gif">
+                <a href="upload.html"><span id="m-underline">M</span>is Guifos</a>
+            </div>
+        </div>
+        <div></div>
+    </section>
+<!-- FIN SECCION MENU     -->
+
+<section class="grid-web-page">
+    <div class="empty"></div>
+    <div class="main-content">
+
+<!-- SECCION BUSCADOR -->
+        <section class="search-section">
+            <div class="search-header">
+                <p>Buscar</p>
+            </div>
+            <div class="search-square">
+                <div></div>
+                <div class="search-box">
+                    <form>
+                        <input class="search-input" oninput="showSearchSquare()" id="search-input-square" type="text" autocomplete="off" placeholder="Busca gifs, hashtags, temas, busca lo que quieras...">
+                    </form>
+                </div>
+                <div></div>
+                <button onclick="startSearch()" class="search-btms" id="search-btms">
+                    <img src="../images/lupa.svg" alt="lupa">
+                    Buscar
+                </button>
+            </div>
+            <div class="search-suggests" id="search-suggests-square">
+                <div></div><div></div><div></div><div></div>
+                <button onclick="searchRecomendation1()" class="search-suggest-items">Argentina</button>
+                <div></div><div></div> <div></div><div></div><div></div>
+                <button onclick="searchRecomendation2()" class="search-suggest-items">Messi</button>
+                <div></div><div></div> <div></div><div></div><div></div>
+                <button onclick="searchRecomendation3()" class="search-suggest-items">TigerWoods</button>
+            </div>
+
+            <div class="history-search"  id="history-search"></div>
+        </section>
+<!-- FIN SECCION BUSCADOR -->
+
+<!-- SECCION SUGERENCIAS -->
+        <div class="suggest-section">
+            <div class="today-suggest">
+                <p>Hoy te sugerimos</p>
+            </div>
+            <div class="gif-suggest-section">
+                <div class="gif-one">
+                    <div class="suggest-header">
+                        <p>#Jonathanvanness</p>
+                        <img src="../images/button3.svg" alt="cruz">
+                    </div>    
+                    <img src="../images/download.gif" alt="gifo-image" class="gif-suggest-image" id="gif-suggest-image">
+                    <button onclick="suggestSearch1()" class="see-more">Ver más...</button>
+                </div>
+                <div></div>
+                <div class="gif-two">
+                    <div class="suggest-header">
+                        <p>#SailorMercury</p>
+                        <img src="../images/button3.svg" alt="cruz">
+                    </div>
+                    <img src="../images/download.gif" alt="gifo-image" class="gif-suggest-image" id="gif-suggest-image-2">
+                    <button onclick="suggestSearch2()" class="see-more">Ver más...</button>
+                </div>
+                <div></div>
+                <div class="gif-three">
+                    <div class="suggest-header">
+                        <p>#Goku</p>
+                        <img src="../images/button3.svg" alt="cruz">
+                    </div>    
+                    <img src="../images/download.gif" alt="gifo-image" class="gif-suggest-image" id="gif-suggest-image-3">
+                    <button onclick="suggestSearch3()" class="see-more">Ver más...</button>
+                </div>
+                <div></div>
+                <div class="gif-four">
+                    <div class="suggest-header">
+                        <p>#Unicorn&Rainbows</p>
+                        <img src="../images/button3.svg" alt="cruz">
+                    </div>    
+                    <img src="../images/download.gif" alt="gifo-image" class="gif-suggest-image" id="gif-suggest-image-4">
+                        <button onclick="suggestSearch4()" class="see-more">Ver más...</button>
+                </div>
+            </div>
+        </div>
+<!-- FIN SECCION SUGERENCIAS -->
+
+<!-- SECCION TENDENCIAS -->
+        <div class="tendency-section" id="tendency-section">    
+            <div class="title-list">
+                <h3 id="giphy_id">Tendencias:</h3>
+            </div>
+            <div class="gif-grid-cols-4" id="giphy_list"></div>
+        </div> 
+    </div>
+    <div class="empty"></div>
+
+</section>
+
+<script src="./assets/js/app.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,163 @@
+//LIGHT MAIN COLORS
+$main-color-one: #F7C9F3 ;
+$main-color-two: #4180F6 ;
+
+//BACKGROUNDCOLORS
+$background-light: #FFF4FD;
+$background-grey: #E6E6E6;
+$background-grey-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+$background-white: #FFFFFF;
+
+//TOP HEADERS
+$gradial-color-one: linear-gradient(270deg, $main-color-one 0%, $main-color-two 100%);
+$top-header-box-shadow: 0 1px 0 0 #110038;
+
+//FONTS
+$font-regular: 'Chakra Petch', sans-serif;
+
+//FONT-COLOR
+$font-color-white: #FFFFFF;
+$font-color-menu-btn: #110038;
+$font-color-search-btn: #B4B4B4;
+
+//MENU BOTTOMS
+$menu-btn-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+$main-border-one: #110038;
+$menu-btn-hover:  #E6BBE2;
+
+//GREY BOTTOMS
+$grey-btn-color: #F0F0F0;
+$grey-btn-border: 1px solid #808080;
+$grey-btn-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+$grey-btn-hover: #FFF4FD;
+$grey-btn-hover-border: 1px solid #CCA6C9;
+$grey-btn-hover-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+$grey-search-btn: #E6E6E6;
+
+//SEARCH SQUARE
+$search-square-border: 1px solid #979797;
+$search-square-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+
+//SEARCH BTN-INPUT
+$search-btn-input: #F7C9F3;
+$search-btn-border: 1px solid #110038;
+$search-btn-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+
+//SEARCH BTN SUGGEST
+$search-suggest-hover: #B4B4B4;
+
+//SUGGEST SECTION
+$today-suggest-bg: #FFFAFE;
+$today-suggest-border: 1px solid #E6BBE2;
+$today-suggest-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+$see-more-btn-border: 1px solid #4C2F99;
+$see-more-btn-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+$see-more-btn-hover: rgb(56, 110, 211);
+
+//*** UPLOAD PAGE *** 
+//CANCEL START BTN
+$cancel-start-btn: #FFF4FD;
+$cancel-start-btn-border: 1px solid #110038; 
+$cancel-start-btn-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+
+//LISTO BTN BOTTOM
+$listo-btn: #FF6161;
+$listo-btn-border: 1px solid #110038;
+$listo-btn-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+
+// NIGHT
+//////////////////////////////////
+//////////////////////////////////
+//////////////////////////////////
+//////////////////////////////////
+
+//TOP HEADER
+
+
+
+$btn-color: #EE3EFE ;
+$btn-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;;
+$btn-border: 1px solid #110038;
+
+$btn-hover: rgba(215, 54, 230, 0.699);;
+$btn-border-hover:  1px solid #110038;
+
+//////////////////////////////////
+//////////////////////////////////
+//////////////////////////////////
+//////////////////////////////////
+
+//MAIN COLORS NIGH
+$main-color-ng: #EE3EFE ;
+$main-color-ng2: #2E32FB ;
+
+//BACKGROUND COLORS
+$background-ng: #110038;
+$background-grey-ng: #B4B4B4;
+$background-grey-shadow-ng: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+$background-white: #FFFFFF;
+
+//TOP HEADERS
+$gradial-color-ng: linear-gradient(270deg, $main-color-ng 0%, $main-color-ng2 100%);
+$top-header-box-shadow-ng:  0 1px 0 0 #110038;
+
+//FONTS
+$font-regular: 'Chakra Petch', sans-serif;
+
+//FONT-COLOR
+$font-color-white: #FFFFFF;
+$font-color-menu-btn-ng: #FFFFFF;
+$font-color-search-btn: #B4B4B4;
+
+//TOP HEADER
+$top-header-box-shadow: 0 1px 0 0 #110038;
+
+//MENU BOTTOMS
+$menu-btn-box-shadow-ng: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+$main-border-one-ng: #110038;
+$menu-btn-hover-ng:  #b12ebd;
+
+//GREY BOTTOMS
+$grey-btn-color-ng: #CCCCCC;
+$grey-btn-border: 1px solid #808080;
+$grey-btn-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+$grey-btn-hover-ng: #2E32FB;
+$grey-btn-hover-border-ng: 1px solid rgba(51,53,143,0.20);
+$grey-btn-hover-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+$grey-search-btn: #E6E6E6;
+
+//SEARCH SQUARE
+$search-square-border: 1px solid #979797;
+$search-square-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+
+//SEARCH BTN-INPUT
+$search-btn-input-ng: #EE3EFE;
+$search-btn-border-ng: 1px solid #110038;
+$search-btn-shadow-ng: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+
+//SEARCH BTN SUGGEST
+$search-suggest-hover: #B4B4B4;
+
+//SUGGEST SECTION
+$today-suggest-bg: #FFFAFE;
+$today-suggest-border-ng: 1px solid #2E32FB;
+$today-suggest-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+$see-more-btn-border: 1px solid #4C2F99;
+$see-more-btn-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+$see-more-btn-hover-ng: rgb(33, 66, 128);
+
+//*** UPLOAD PAGE *** 
+//CANCEL START BTN
+$cancel-start-btn-ng: #EE3EFE;
+$cancel-start-btn-border-ng: 1px solid #110038; 
+$cancel-start-btn-shadow-ng: 1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+
+//LISTO BTN BOTTOM
+$listo-btn: #FF6161;
+$listo-btn-border: 1px solid #110038;
+$listo-btn-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+
+//REPEAT BTN
+$repeat-btn-bg: #110038;
+$repeat-btn-border: 1px solid #B4B4B4;
+$repeat-btn-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;

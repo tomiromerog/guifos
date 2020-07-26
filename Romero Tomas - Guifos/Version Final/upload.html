@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="tomas romero">
+    <meta name="descripcion" content="Bienvenido a gifos donde los GIF estan">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+    <title>Guifos.com</title>
+    <link rel="stylesheet" id="styleSheet" type="text/css" href="assets/styles/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
+</head>
+<div>
+
+<!-- TOP HEADER     -->
+    <div class="top-header">
+        <p class="text-top-header">¡Bienvenidos/as a Guifos.com! ------- Donde los gifs estan.////// Número de visitas: 12.765.803 </p>
+    </div>
+<!-- Fin TOP HEADER     -->
+
+<!-- SECCION MENU -->
+        <div class="menu-section">
+            <div class="menu-section-images">
+                <div></div>
+                <!-- Como hago para hacer un Href sobre una imagen     -->
+                <a href="index.html"><div class="menu-section-arrow"></div></a>
+                <a href="index.html"><div class="menu-section-image2"></div></a>
+            </div>
+            <div></div>
+            <div class="menu-btms">
+                <div></div>
+                <button onclick="dropDownBtn()" class="choose-theme">Elegir tema</button>
+                <div onclick="dropDownBtn()" class="arrow-theme">
+                    <div class="arrow-theme-img"></div>
+                    <div class="menu-drop-down" id="menu-drop-down">
+                        <div></div>
+                        <div onclick="sailorDayBtn()" class="sailor-style"><span>S</span>ailor Day</div>
+                        <div></div>
+                        <div onclick="sailorNightBtn()" class="sailor-style"><span>S</span>ailor Night</div>
+                    </div>
+                </div>
+                <div class="my-gif-ng"></div>
+            </div>
+            <div></div>
+        </div>
+<!-- FIN SECCION MENU     -->
+
+<!-- Comienzo SECCION Crear Guifos -->
+<div class="seccion-crear-guifos" id="seccion-crear-guifos"> 
+    <div></div>
+    <div>
+        <!-- INSTRUCCIONES CREAR GUIFOS -->
+        <div class="alert-crear-guifos" id="alert-crear-guifos">
+            <div class="alert-header"><p>Crear Guifos</p></div>
+            <div class="alert-content">
+                <div class="alert-image">
+                    <div class="window-image"></div>
+                </div>
+                <div class="alert-text">
+                    <p class="alert-text-title"><b>Aquí podrás crear tus propios guifos</b></p>
+                    <br>
+                    <p class="alert-text-instrucciones">Crear tu <b>guifo</b> es muy fácil, graba cualquier 
+                        imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:<br><br>
+                        <b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)<br>
+                        <b>2)</b> Capturar tu momento guifo <br>
+                        <b>3)</b> Revisar el momento <br>
+                        <b>4)</b> Listo para subir y compartir! <br>
+                        ¿Quieres comenzar a crear tu <b>guifo</b> ahora?
+                    </p>
+                </div>
+                <div></div>
+                <div class="alert-bottoms">
+                    <div></div>
+                    <button onclick="alertBtnCancel()" class="alert-bottom-cancel">Cancelar</button>
+                    <button onclick="prepareCreateGif()" class="alert-bottom-start">Comenzar</button>
+                </div>
+            </div>
+        </div>
+        <!-- FIN INSTRUCCIONES CREAR GUIFOS -->
+        <!-- MODO PRE CAPTURANDO -->
+        <div class="pre-capturing-section" id="pre-capturing-section">
+            <div class="alert-pre-capture">
+                <div class="alert-header-pre-capture"><p>Capturando Tu Guifo</p></div>
+                <div class="alert-content-pre-capture"> 
+                    <video class="alert-video-camara" id="alert-video-camara"></video>
+                    <div class="alert-bottoms-capturing">
+                        <div class="time-table">
+                            <div></div>
+                        </div>
+                        <div></div>
+                        <div class="camera-section-display">
+                                <div class="camera-bottom-square-pre-capturing">
+                                    <div onclick="startCreateGif()" class="camera-bottom-pre-capturing"><a>aaa</a></div>
+                                </div>
+                                <div onclick="startCreateGif()" class="alert-bottom-pre-capturing"><a>Capturar</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN MODO PRE CAPTURANDO -->
+        <!-- MODO CAPTURANDO -->
+        <div class="capturing-section" id="capturing-section">
+            <div class="alert-pre-capture">
+                <div class="alert-header-pre-capture"><p>Capturando Tu Guifo</p></div>
+                <div class="alert-content-pre-capture"> 
+                    <video class="alert-video-camara" id="alert-video-camara2"></video>
+                    <div class="alert-bottoms-capturing">
+                        <div class="time-table">
+                            <div class="time-counter">
+                                <p>00:00:00</p>
+                            </div>
+                        </div>
+                        <div></div>
+                        <div class="camera-section-display">
+                                <div class="camera-bottom-square-capturing">
+                                    <div onclick="stopRecording()" class="camera-bottom-capturing"></div>
+                                </div>
+                                <div onclick="stopRecording()" class="alert-bottom-capturing"><a>Listo</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN MODO CAPTURANDO -->
+        <!-- MODO PRE SUBIENDO VISTA PREVIA -->
+        <div class="pre-uploading-section" id="pre-uploading-section">
+            <div class="alert-pre-capture">
+                <div class="alert-header-pre-capture"><p>Vista Previa</p></div>
+                <div class="alert-content-pre-capture" id="alert-content-pre-capture"> 
+                    <img class="alert-video-camara" id="alert-video-camara3" src="../images/forward.svg" alt="upload">
+                    <div class="alert-bottoms-uploading">
+                        <div class="time-table">
+                            <div class="time-counter">
+                                <p>00:00:00</p>
+                            </div>
+                        </div>
+                        <div class="gif-uploading-section">
+                            <div class="foward-uploading-btn"></div>
+                            <img src="../images/download.gif" class="foward-gif-img" alt="mundo">
+                        </div>
+                        <div class="repeat-section-display">
+                            <button onclick="repeatRecording()" class="repeat-btn">Repetir Captura</button>
+                            <button onclick="uploadRecording()" class="upload-btn">Subir Guifo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN MODO PRE SUBIENDO VISTA PREVIA -->
+        <!-- MODO SUBIENDO -->
+        <div class="uploading-section" id="uploading-section">
+            <div class="alert-pre-capture">
+                <div class="alert-header-pre-capture"><p>Subiendo Guifo</p></div>
+                <div class="alert-content-pre-capture"> 
+                    <div class="alert-video-uploading">
+                        <div></div>
+                        <div class="world-img-area"></div>
+                        <div class="uploading-text">Estamos subiendo tu guifo…</div>
+                        <img src="../images/download.gif" class="uploading-img-gif" alt="download2">
+                        <div class="estimated-time">Tiempo restante: <s>38 años</s> algunos minutos</div>
+                    </div>
+                    <div class="alert-bottoms-uploading">
+                        <div></div>
+                        <div></div>
+                        <div class="cancel-section-display">
+                            <div></div>
+                            <div class="cancel-upload-btn"><a href="">Cancelar</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN MODO SUBIENDO -->
+        <!-- SECTION GUIFO SUBIDO CON EXITO -->
+            <div class="uploaded-guifo-section" id="uploaded-guifo-section">
+                <div class="uploaded-header">Guifo Subido Con Exito</div>
+                <div class="uploaded-grey-section">
+                    <img class="guifo-uploaded-preview" id="guifo-uploaded-preview" src="../images/forward.svg" alt="foward">
+                    <div class="guifo-uploaded-options-section">
+                        <div></div>
+                        <div class="uploaded-text">Guifo creado con exito</div>
+                        <button onclick="copyGifUrl()" class="uploaded-copy-link">Copiar Enlace Guifo</button>
+                        <button onclick="downloadGif()" class="uploaded-download">Descargar Guifo</button>
+                        <div></div>
+                    </div>
+                    <div></div>
+                    <div class="uploaded-ready-btn"><a href="">Listo</a></div>
+                </div>
+            </div>
+        <!-- SECTION GUIFO SUBIDO CON EXITO -->
+    </div>
+    <div></div>
+</div>
+<!-- FIN SECCION CREAR GUIFOS -->
+
+<!-- MY GUIFOS SECTION -->
+<div class="my-guifo-section">
+    <div></div>
+    <div class="main-guifo-section">
+        <div class="my-guifo-upload-header">
+            <p>Mis Guifos</p>
+        </div>
+        <div class="my-guifo-upload-content" id="my-guifo-list"></div>
+    </div>
+    <div></div>
+</div>
+<!-- FIN MY GUIFO SECTION -->
+
+</div>
+
+<script src="./assets/js/appUpload.js"></script>
+<script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+</body>
+
+</html>
+
